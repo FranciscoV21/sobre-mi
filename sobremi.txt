@@ -1,0 +1,4 @@
+Nombre: Francisco Jair Vega Salazar
+Edad: 21
+Carrera: Ingenieria en Sistemas Inteligentes
+Me gusta: Los videojuegos y la tecnologia
