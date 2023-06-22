@@ -50,4 +50,5 @@ void menu()
                 break;
         }
     }
+    printf("Vuelva pronto\n");
 }
