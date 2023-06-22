@@ -30,9 +30,24 @@ void menu()
         printf("[1-Escribir una nueva nota][2-Borrar una nota][3-Imprimir todas mis notas][4-Salir]: ");
         scanf("%d",&respuesta_a_menu);
         printf("La respuesta al menu es: %d\n",respuesta_a_menu);
-        if(respuesta_a_menu==4)
+        switch(respuesta_a_menu)
         {
-            ciclo=-1;
+            case 1:
+                printf("Creando nueva nota...\n");
+                break;
+
+            case 2:
+                printf("Borrando nota...\n");
+                break;
+
+            case 3:
+                printf("Imprimiendo notas...\n");
+                break;
+
+            case 4:
+                printf("Saliendo...\n");
+                ciclo=-1;
+                break;
         }
     }
 }
