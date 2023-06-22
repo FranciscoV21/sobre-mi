@@ -11,7 +11,7 @@ typedef struct
 }Organizador;
 //Prototipos
 void menu();
-void submenu();
+void hacer_la_nota(char *nombre_de_la_nota);
 
 int main()
 {
@@ -22,6 +22,7 @@ void menu()
 {
     int respuesta_a_menu;
     int ciclo=1;
+    char nombre_de_la_nota;
     while(ciclo!=-1)
     {
         ciclo=1;
@@ -34,6 +35,9 @@ void menu()
         {
             case 1:
                 printf("Creando nueva nota...\n");
+                printf("Dame el nombre de la nota: ");
+                scanf("\n%[^\n]",nombre_de_la_nota);
+                hacer_la_nota(nombre_de_la_nota);
                 break;
 
             case 2:
@@ -51,4 +55,9 @@ void menu()
         }
     }
     printf("Vuelva pronto\n");
+}
+
+void hacer_la_nota(char *nombre_de_la_nota)
+{
+    
 }
